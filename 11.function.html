@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*function greet(){
+            console.log("good morning");
+        }
+        console.log(greet);
+*/
+        function add(a,b,c) {
+            return a+b+c;
+            
+        }
+        //function argument 
+         k=add(3,4,5);
+      //  k=add(3,4);// THIS WILL GIVE NAN
+      //passing fewer argument
+        //k=add(3,4,); will give NAN
+      //passing more argument  
+       // k=add(3,4,5,4);//last 4 will be not added
+        console.log(k);
+       //Default parameters
+       function findInterest(p,r=4,t=1) {
+        console.log("interest over",t,"year is:",(p*r*t)/100);
+       }
+       findInterest(1000);
+       findInterest(1000,9);
+       findInterest(1000,6,2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      /*
+//Variable hoisting
+console.log(a);//this step is known as variable hoisting  here u want to acccess variable before intiallization which show undefined means value
+// stored in a will not be shown.so u can use variable name but not value assigned to it.
+var a = 10;
+console.log(a);
+//function hoisting
+
+
+console.log(cube(3));//here function hoisting is happening,u are access the before function declaration
+function cube(n){
+  return n*n*n;
+}
+*/
+    /* Nested function
+
+
+      function totalcount(){
+        var count =0;
+        function increasecount() {
+          count++;
+
+          
+        }
+        increasecount();
+        increasecount();
+        increasecount();
+        increasecount();
+
+
+
+        return count;
+      }
+      console.log(totalcount());
+
+*/
+function a() {
+  var i = 20;
+  function a() {
+    var i= 20;
+    function b(){
+      function c(){
+        console.log(i);
+      }
+      c();
+    }
+    b();
+    
+  }a()
+  
+}
+
+
+        /*let a = 20;
+        const b = 30;
+        {
+            let a = 60;
+           console.log(a);
+           console.log(b);
+           var x = 100;
+        }
+        console.log(a);
+        console.log(b);
+        console.log(x);
+        console.log(c);
+        */
+      /* var x = 100;
+       var y = 200;
+       let a = 10;
+       x = 50;
+       y = 60;
+       {
+        console.log(x);
+        y = 200;
+        console.log(y);
+        var y = 200;
+        let a = 20;
+        a = 30;
+        console.log(a);
+       }
+       console.log(a);
+       //sir yaha per y ka value 60 aana chaiye.....
+       console.log(y);*/
+      /* let a = 10;
+       let b = 20;
+       var c = 30;
+       const d = 40;
+       {
+        console.log(c);
+        console.log(a);
+        
+        console.log(b);
+        console.log(a);
+        //console.log(d);
+        const d = 50;
+        console.log(d);
+
+       }
+       console.log(a);
+       */
+      // var a = 10;
+      // let b = 20;
+      // const c = 30;
+ 
+      // b = 30;
+      // c = 20;
+      // {
+      //   console.log(b);
+      //   let b = 30;
+      //   console.log(b);
+      //   var a = 100;
+      // }
+      // console.log(a);
+      // console.log(b);
+      // console.log(c);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var movies={
+            name:'Bahubali',
+            year:2016,
+            hero:'prabhas',
+            //getInfo:function demo(){
+                //no change happen after replacing demo name
+
+                getInfo:function (){
+                   
+                console.log('Movies Name:'+this.name);
+                console.log('released date:'+this.year);
+                console.log('Hero Name:'+this.hero);
+                console.log('===================');
+
+            }
+        };
+        movies.getInfo();
+    </script>
+</body>
+</html>

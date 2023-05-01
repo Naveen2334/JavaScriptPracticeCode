@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1={
+            a:1,
+            b:2,
+            c:3,
+            d:4
+        }
+        let obj2={
+           e:5,
+           f:6,
+           g:7
+        }
+        let obj3 ={
+            h:8,
+            i:9
+        }
+        let objcopy = Object.assign({},obj1,obj2,obj3);
+        console.log(objcopy);
+        let alpha =Object.keys(objcopy);
+        console.log(alpha);
+        let duke =JSON.stringify(objcopy);
+        console.log(duke);
+       let beta = JSON.parse(duke);
+       console.log(beta);
+       console.log(typeof(duke));
+       console.log(typeof(beta));
+        l
+    </script>
+</body>
+</html>
